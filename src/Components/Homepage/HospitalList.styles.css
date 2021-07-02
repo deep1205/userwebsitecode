@@ -1,0 +1,202 @@
+.card {
+    background-image: linear-gradient(to right, #C504B6, #4B038E);
+    opacity: 0.9;
+    border-radius: 20px;
+    z-index: 2;
+	position: relative;
+	width: 97.5vw;
+	margin-left: 14px ;
+	margin-top: -180px;
+}
+.hospital-details{
+	display: flex;
+}
+.card-body {
+    color: white;
+    text-align: center;
+}
+.dropdown-span {
+    cursor: pointer;
+}
+.dropdownhl-menu {
+    height: 400px !important;
+    width:300px !important;
+    overflow: scroll;
+}
+
+.shadow {
+	box-shadow: 0 8px 6px -6px black;
+	background-color: rgb(248, 244, 244);
+	color: #C504B6;
+	border-radius: 5px;
+	font-size: 5px;
+	width: 230px;
+}
+.cardCross{
+	cursor: pointer;
+}
+
+.SearchBar{
+	margin-top: 10px;
+   display: flex;
+   margin-bottom: 10px;
+   justify-content: space-between;
+  }
+  .input{
+  margin-left: 10px;
+  border-radius: 10px;
+  display: flex;
+  }
+  .button{
+  margin-right: 25px;
+  }
+  .myLocationBtn:hover{
+	background-color: gray;
+	color:white;
+  }
+  .myLocationBtn{
+	border-radius: 10px;
+  }
+  .searchHospital{
+	border: none;
+	width: 200px;
+	margin-left: 0.3rem;
+  }
+  .searchHospital:focus{
+	outline: none;
+  }
+  .myLocationBtn:focus{
+	outline: none;
+  }
+  
+
+@media screen and (max-width: 1800px) {
+	.shadow {
+		box-shadow: 0 8px 6px -6px black;
+		background-color: rgb(248, 244, 244);
+		color: #C504B6;
+		border-radius: 5px;
+		width: 200px;
+	}
+	.hospital-title{
+		font-size: 25px;
+	}
+	.cardCross{
+		cursor: pointer;
+	}  
+	
+  }
+
+@media screen and (max-width: 1300px) {
+	.shadow {
+		box-shadow: 0 8px 6px -6px black;
+		background-color: rgb(248, 244, 244);
+		color: #C504B6;
+		border-radius: 5px;
+		width: 200px;
+	}
+	.hospital-title{
+		font-size: 20px;
+	}
+	.cardCross{
+		cursor: pointer;
+	} 
+	.card{
+		margin-left: 10px;
+	} 
+  }
+  @media screen and (max-width: 960px) {
+	.shadow {
+		box-shadow: 0 8px 6px -6px black;
+		background-color: rgb(248, 244, 244);
+		color: #C504B6;
+		border-radius: 5px;
+		width: 180px;
+	}
+	.hospital-title{
+		font-size: 20px;
+	}
+	.cardCross{
+		cursor: pointer;
+	}
+	.card{
+		margin-left: 4px;
+	}
+  }
+  @media screen and (max-width: 770px) {
+	.shadow {
+		box-shadow: 0 8px 6px -6px black;
+		background-color: rgb(248, 244, 244);
+		color: #C504B6;
+		border-radius: 5px;
+		width: 150px;
+	}
+	.hospital-title{
+		font-size: 20px;
+	}
+	.cardCross{
+		cursor: pointer;
+	}
+	.card{
+		margin-left: 2px;
+	}
+	.hospital-detail{
+		font-size: 10px;
+	}
+  }
+
+@media screen and (max-width: 550px) {
+	.shadow {
+		box-shadow: 0 8px 6px -6px black;
+		background-color: rgb(248, 244, 244);
+		color: #C504B6;
+		border-radius: 5px;
+		width: 150px;
+	}
+	.hospital-title{
+		font-size: 20px;
+	}
+	.cardCross{
+		cursor: pointer;
+	}
+	.card{
+		margin-left: 0;
+	}
+	.hospital-detail{
+		font-size: 10px;
+	}
+  }
+
+  @media screen and (max-width: 400px) {
+	.shadow {
+		box-shadow: 0 8px 6px -6px black;
+		background-color: rgb(248, 244, 244);
+		color: #C504B6;
+		border-radius: 5px;
+		width: 100px;
+	}
+	.hospital-title{
+		font-size: 15px;
+	}
+	.cardCross{
+		cursor: pointer;
+	}
+	.card{
+		margin-left: 0;
+	}
+	.input{
+		margin-left: 5;
+		border-radius: 5px;
+		display: flex;
+		font-size: 13px;
+	}
+	.hospital-detail{
+		font-size: 8px;
+	}
+	.myLocationBtn{
+		width: 115px;
+	}
+	.button{
+		margin-left: -22px;
+	}
+  }

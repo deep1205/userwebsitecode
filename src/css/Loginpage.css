@@ -1,0 +1,327 @@
+
+
+
+
+.maindiv{
+  display: table;
+  width: 100vw;
+
+}
+
+.div2{
+  background:white;
+  height: 700px;
+  width: 50%;
+  display: table-cell;
+  margin: auto;
+
+}
+.div1 {
+  background:white;
+  height: 700px;
+  width: 50%;
+  display: table-cell;
+  margin: auto;
+ 
+
+}
+
+
+
+
+
+#wholeSlider {
+  width:"100%";
+  height:"100%";
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: -440px;
+}
+
+@media (max-width: 1100px) {
+  #wholeSlider {
+    margin: 0 0;
+    width: 100%;
+    height: auto;
+    margin:auto;
+
+    
+  }
+}
+
+
+
+
+
+.main{
+        background-color:white;
+        width: 480px;
+        height: 520px;
+       
+        margin:30px auto;
+        border-radius: 1.9em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    
+    .sign {
+        padding-top: 4px;
+        color:red;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size:40px;
+
+    }
+    
+    .un {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+    form.form1 {
+        padding-top: 0px;
+    }
+    
+    .pass {
+            width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+   
+    .un:focus, .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+        
+    }
+    
+    .submit {
+        cursor: pointer;
+        border-radius: 5em;
+        color:black;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 35%;
+        font-size: 0.9rem;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+    
+    .forgot {
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+        color: #E1BEE7;
+        padding-top: 15px;
+    }
+    
+    a {
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+        color:orangered;
+        text-decoration: none
+    }
+
+    /* @media screen and (max-width:1200px)
+    {
+        .main{
+            margin-left:30px;
+            width:480px;
+        }
+    } */
+    @media screen and (max-width:1100px){
+        .maindiv{
+            width:100vw;
+        }
+  .div1 {
+    display: block;
+    height: 550px;
+    width: 100%;
+    margin:30px 0;
+    
+  }
+  
+  .div2{
+    display: block;
+    height: 450px;
+    width: 100%;
+    margin:30px 0;
+    
+  }
+}
+
+    
+    @media (max-width: 1000px) {
+        .main {
+            border-radius: 1.9rem;
+            width:500px;
+        }
+        
+        
+    }
+
+      @media (max-width: 500px) {
+        .main{
+            border-radius:1.9rem;
+            width:400px;
+        }
+        
+        
+    }
+      @media (max-width: 400px) {
+        .main {
+            border-radius: 1.9rem;
+            width:320px;
+        }
+        
+        
+    }
+      @media (max-width: 300px) {
+        .main{
+            border-radius: 1.9rem;
+            width:380px;
+        }
+        
+        
+    }
+
+
+    /*--------------------text font css media query -----*/
+
+       @media (max-width: 2200px) {
+           .sign{
+                  font-size:2rem ;
+           }
+        .welcometext{
+            font-size:1.38rem ;
+        }
+     
+        
+        
+    }
+      @media (max-width: 1800px) {
+           .sign{
+                  font-size:1.899rem ;
+           }
+        .welcometext{
+            font-size:1.2rem ;
+        }
+     
+        
+        
+    }  @media (max-width: 1600px) {
+           .sign{
+                  font-size:2rem ;
+           }
+        .welcometext{
+            font-size:1rem ;
+        }
+     
+        
+        
+    }  @media (max-width: 1400px) {
+           .sign{
+                  font-size:1.7rem ;
+           }
+        .welcometext{
+            font-size:1rem ;
+        }
+     
+        
+        
+    }  @media (max-width: 1200px) {
+           .sign{
+                  font-size:1.6rem ;
+           }
+        .welcometext{
+            font-size:0.99rem ;
+        }
+     
+        
+        
+    }  @media (max-width: 1000px) {
+           .sign{
+                  font-size:1.6rem ;
+           }
+        .welcometext{
+            font-size:0.89rem ;
+        }
+     
+        
+        
+    }  @media (max-width: 800px) {
+           .sign{
+                  font-size:1.5rem ;
+           }
+        .welcometext{
+            font-size:0.89rem ;
+        }
+     
+        
+        
+    }  @media (max-width:600px) {
+           .sign{
+                  font-size:1.4rem ;
+           }
+        .welcometext{
+            font-size:0.899rem ;
+        }
+     
+        
+        
+    }  @media (max-width: 400px) {
+           .sign{
+                  font-size:1.36rem ;
+           }
+        .welcometext{
+            font-size:0.87rem ;
+        }
+     
+        
+        
+    }  @media (max-width: 300px) {
+           .sign{
+                  font-size:1rem ;
+           }
+        .welcometext{
+            font-size:0.87rem ;
+        }
+     
+        
+        
+    }
+
+
+
+

@@ -1,0 +1,28 @@
+.map {
+    position: relative;
+    width:100vw;
+    height: 82vh;
+    
+    margin:30px  auto 30px auto;
+  }
+  .mapbutton {
+    position:absolute;
+    z-index:3;
+    right:0;
+    margin-right: 0px !important
+  }
+  @media screen and (min-width:1200px){
+    .map{
+      top: 0px;
+      
+    }
+    .mapbutton{
+      top: 200px;
+    }
+  }
+  @media screen and (min-width:1400px){
+    .mapbutton{
+      top: 200px;
+      height: 82vh;
+    }
+  }
