@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "react-phone-input-2/lib/style.css";
 import firebaseConfig from "./firebaseConfig";
 import * as firebaseui from "firebaseui";
 import firebase from "firebase";
