@@ -58,9 +58,21 @@ function Navbar({ location }) {
           <a href="/home">Home</a>
           <a href="/token">TrackAmbulance</a>
           <a href="/pastride">PastRide</a>
+          {localStorage.getItem("token") != null ? (
+            <a
+              onClick={() => {
+                localStorage.removeItem("token");
+                window.location.reload();
+              }}
+              style={{ cursor: "pointer", color: "white" }}
+            >
+              Logout
+            </a>
+          ) : (
             <a href="/login">Login</a>
+          )}
 
-{/* 
+          {/* 
           <a href="/login"
             onClick={() => {
               localStorage.removeItem("token");
@@ -90,8 +102,3 @@ function Navbar({ location }) {
 
 export default Navbar;
 
-/* <div className={location==='home' ? 'odd' : 'even'} onClick={()=>history.push('/')}>Home</div>
-<div className={location==='user' ? 'odd' : 'even'} onClick={()=>history.push('/user')}>User</div>
-<div className={location==='hospital' ? 'odd' : 'even'} onClick={()=>history.push('/hospital')}>Hospital</div>
-<div className={location==='aboutus' ? 'odd' : 'even'} onClick={()=>history.push('/aboutus')}>About Us</div>
-<div className={location==='collab' ? 'odd' : 'even'} onClick={()=>history.push('/collaborate')}>Collaborate</div> */

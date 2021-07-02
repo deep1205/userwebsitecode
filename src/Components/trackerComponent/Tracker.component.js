@@ -12,7 +12,6 @@ import driver from './../../images/user.png'
 import Collapse from '@material-ui/core/Collapse';
 import Fab from '@material-ui/core/Fab';
 import Header from './../Myheader/Header'
-import Headerwithlogin from "../Myheader/Headerwithlogin";
 import axios from 'axios'
 import PersonIcon from '@material-ui/icons/Person';
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
@@ -225,11 +224,9 @@ export default function ResponsiveDrawer(props) {
 
   return (
     <div>
-      {localStorage.getItem("token") == null ? (
+     
         <Header location='token' />
-      ) : (
-        <Headerwithlogin location='token' />
-      )}
+      
       <nav className={classes.drawer} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden implementation="css">

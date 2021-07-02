@@ -34,7 +34,7 @@ const App = () => {
             exact path="/pastride"
           
             component={Pastridepage}
-            meta={{ auth: true }}
+            meta={{auth: true}}
           />
         <Route exact path="/track">
           <TrackPage />

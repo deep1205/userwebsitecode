@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Components/Myheader/Header";
-import Headerwithlogin from "../Components/Myheader/Headerwithlogin";
 import "../css/Loginpage.css";
 import NewSlider from "../Components/Slider/NewSlider";
 import Phoneverify from "./../Components/Firebase/phoneverify";
@@ -28,11 +27,9 @@ const Loginpage = () => {
   
   return (
     <div>
-      {localStorage.getItem("token") == null ? (
+      
         <Header location="login" />
-      ) : (
-        <Headerwithlogin location="login" />
-      )}
+      
       <div class="maindiv fadeInDown">
         <div class="div1">
           <div className="mysignupform">
