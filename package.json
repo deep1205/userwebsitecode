@@ -15,6 +15,7 @@
     "firebase": "^8.6.7",
     "firebaseui": "^4.8.0",
     "google-map-react": "^2.1.10",
+    "google-maps-react": "^2.0.6",
     "material-table": "^1.69.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
