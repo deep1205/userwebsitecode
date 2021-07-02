@@ -215,7 +215,7 @@ const Activerideslist = () => {
           }}
           onRowClick={showRideDetail}
           options={{
-            filtering: true,
+            filtering: false,
             sorting: true,
             search: false,
             toolbar: false,
