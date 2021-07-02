@@ -27,7 +27,6 @@
     "reactstrap": "^8.9.0",
     "serve": "^12.0.0",
     "socket.io-client": "^4.1.2",
-    "supercons": "^0.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
