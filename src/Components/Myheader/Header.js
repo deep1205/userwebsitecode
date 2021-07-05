@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../css/Header.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { useHistory } from 'react-router'
 import logo from "../../images/PP_logo_yellow.png";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -59,17 +59,17 @@ function Navbar({ location }) {
           <a href="/token">TrackAmbulance</a>
           <a href="/pastride">PastRide</a>
           {localStorage.getItem("token") != null ? (
-            <a
+            <Link
               onClick={() => {
                 localStorage.removeItem("token");
-                window.location.reload();
+                
               }}
               style={{ cursor: "pointer", color: "white" }}
             >
               Logout
-            </a>
+            </Link>
           ) : (
-            <a href="/login">Login</a>
+            <Link to="/login">Login</Link>
           )}
 
           {/* 

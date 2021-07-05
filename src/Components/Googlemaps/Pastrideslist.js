@@ -10,7 +10,6 @@ import axios from "axios";
 import MaterialTable from "material-table";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import useWindowDimensions from "./getWindowDimensions"
-import "./Ridesdetail.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Fab from "@material-ui/core/Fab";
 import ListIcon from "@material-ui/icons/List";
@@ -18,7 +17,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import styles from "../../css/Request.module.css";
 import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
-
+import CloseIcon from "@material-ui/icons/Close";
 const Activerideslist = () => {
   const { height, width } = useWindowDimensions();
   const [cardOpen, setCardOpen] = useState(false);
@@ -223,7 +222,7 @@ const Activerideslist = () => {
           }}
         />
 
-        <HighlightOffRoundedIcon
+        <CloseIcon
           style={{
             borderRadius: "0",
             position: "absolute",
