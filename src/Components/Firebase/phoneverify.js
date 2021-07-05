@@ -55,10 +55,11 @@ function Otp() {
     if (firebaseui.auth.AuthUI.getInstance()) {
       const ui = firebaseui.auth.AuthUI.getInstance();
       ui.start("#firebaseui-auth-container", uiConfig);
-    } else {
+    } else  {
       const ui = new firebaseui.auth.AuthUI(firebase.auth());
       ui.start("#firebaseui-auth-container", uiConfig);
     }
+    
   }, []);
 
 

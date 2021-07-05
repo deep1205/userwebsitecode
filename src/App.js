@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory, NavLink } from "react-router-dom";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Footer from "./Components/Footer"
 import Homepage from "./Screens/Homepage";
@@ -39,9 +40,18 @@ const App = () => {
         <Route exact path="/track">
           <TrackPage />
         </Route>
-        <Route exact path="/login">
+        {localStorage.getItem("token")!==null ?
+         <Route
+            exact path="/#">
+          <Loginpage />
+        </Route>:
+        <Route
+            exact path="/login">
           <Loginpage />
         </Route>
+         }
+
+       
 
         <Redirect to="/home" />
       </Switch>
