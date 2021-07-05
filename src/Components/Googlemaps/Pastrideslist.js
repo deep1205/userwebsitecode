@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Icon from "supercons"
 import FirstPageIcon from "@material-ui/icons/FirstPage";
 import LastPageIcon from "@material-ui/icons/LastPage";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
@@ -10,7 +9,6 @@ import PastRideMap from "./PastrideGooglemap";
 import axios from "axios";
 import MaterialTable from "material-table";
 import FilterListIcon from "@material-ui/icons/FilterList";
-
 import useWindowDimensions from "./getWindowDimensions"
 import "./Ridesdetail.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -225,7 +223,7 @@ const Activerideslist = () => {
           }}
         />
 
-        <Icon
+        <HighlightOffRoundedIcon
           style={{
             borderRadius: "0",
             position: "absolute",
@@ -234,8 +232,6 @@ const Activerideslist = () => {
             zIndex: "10",
             tableStyle,
           }}
-          glyph="view-close-small"
-          size={32}
           onClick={() => setTableOpen(false)}
         />
       </div>
