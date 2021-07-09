@@ -59,7 +59,7 @@ function Navbar({ location }) {
           <a href="/token">TrackAmbulance</a>
           <a href="/pastride">PastRide</a>
           {localStorage.getItem("token") != null ? (
-            <Link
+            <a href="/login"
               onClick={() => {
                 localStorage.removeItem("token");
                 
@@ -67,9 +67,9 @@ function Navbar({ location }) {
               style={{ cursor: "pointer", color: "white" }}
             >
               Logout
-            </Link>
+            </a>
           ) : (
-            <Link to="/login">Login</Link>
+            <a style={{ cursor: "pointer", color: "white" }} href="/login">Login</a>
           )}
 
           {/* 
