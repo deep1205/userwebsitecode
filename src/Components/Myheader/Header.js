@@ -72,16 +72,7 @@ function Navbar({ location }) {
             <a style={{ cursor: "pointer", color: "white" }} href="/login">Login</a>
           )}
 
-          {/* 
-          <a href="/login"
-            onClick={() => {
-              localStorage.removeItem("token");
-              window.location.reload();
-            }}
-            style={{ cursor: "pointer", color: "white" }}
-          >
-            Logout
-          </a> */}
+          
           {location === "home" && <div className="animation start-user" />}
           {location === "token" && <div className="animation start-hospital" />}
           {location === "pastride" && (
