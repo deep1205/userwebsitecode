@@ -43,7 +43,7 @@ function Otp() {
               console.log(result);
               
               localStorage.setItem("token", result["token"]);
-              history.push("/home");
+              history.push("/pastride");
             })
             .catch((error) => console.log(error));
           
