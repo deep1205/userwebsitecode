@@ -177,7 +177,8 @@ const Activerideslist = () => {
           position: "absolute",
           borderRadius: "0px 30px 30px 0px",
           color: "white",
-          backgroundColor: "black",
+          backgroundColor: "#3A68DADE",
+          
         }}
         variant="extended"
         color="primary"
@@ -225,6 +226,7 @@ const Activerideslist = () => {
 
         <CloseIcon
           style={{
+            cursor:'pointer',
             borderRadius: "0",
             position: "absolute",
             left: window.screen.width > 800 ? "430px" : "300px",
